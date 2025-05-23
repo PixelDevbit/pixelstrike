@@ -1,127 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strike - 2D Jet Shooter Game</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strike - PixelStrike</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      background-color: #222;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #333;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: #444;
+    }
+
+    .container {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #222, #333);
+      padding: 4rem 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+
+    .section {
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 900px;
+    }
+
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        flex: 1 1 100%;
+        padding: 1rem;
+      }
+
+      .hero {
+        padding: 2rem 1rem;
+      }
+    }
+
+    .download-btn {
+      background: #0f0;
+      color: #000;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .download-btn:hover {
+      background: #0c0;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>STRIKE</h1>
-            </div>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about-game">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#download-section">Download</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <img src="logo.png" alt="Strike Logo" />
+    <h1>Strike</h1>
+    <p>By PixelStrike</p>
+  </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h2>Take Command. Annihilate the Threat.</h2>
-                <p class="tagline">Man your battle truck's cannon and shoot down waves of enemy jets in this action-packed 2D shooter!</p>
-                <a href="#download-section" class="cta-button">Download Strike Now!</a>
-            </div>
-            </section>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#help">Help</a>
+    <a href="#about">About</a>
+  </nav>
 
-        <section id="about-game" class="content-section">
-            <h2>About Strike</h2>
-            <div class="about-container">
-                <div class="about-text">
-                    <p>Strike is an intense 2D shooter where you control a heavily armed truck tasked with defending against relentless aerial assaults. Enemy jets fill the skies, dropping deadly bombs and unleashing barrages of fire. It's up to you to aim true, upgrade your weaponry, and survive the onslaught.</p>
-                    <p>Prepare for fast-paced arcade action that will test your reflexes and strategic thinking. Can you become the ultimate jet-destroying ace?</p>
-                </div>
-                <div class="about-image">
-                    <img src="placeholder-truck.png" alt="Strike Game Truck">
-                </div>
-            </div>
-        </section>
+  <div class="container">
+    <section id="home" class="hero" data-aos="fade-up">
+      <h2>Welcome to Strike!</h2>
+      <p>Defend your radar in this thrilling action shooter game.</p>
+    </section>
 
-        <section id="features" class="content-section alt-bg">
-            <h2>Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <img src="placeholder-icon-action.png" alt="Action Icon" class="feature-icon">
-                    <h3>Intense Arcade Action</h3>
-                    <p>Experience thrilling, fast-paced 2D shooter gameplay.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="placeholder-icon-cannon.png" alt="Cannon Icon" class="feature-icon">
-                    <h3>Powerful Battle Truck</h3>
-                    <p>Command a customizable truck with devastating cannons.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="placeholder-icon-jets.png" alt="Jets Icon" class="feature-icon">
-                    <h3>Varied Enemy Jets</h3>
-                    <p>Face diverse enemy aircraft with unique attack patterns.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="placeholder-icon-bombs.png" alt="Bombs Icon" class="feature-icon">
-                    <h3>Dodge Deadly Bombs</h3>
-                    <p>Evade explosive threats raining down from above.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="placeholder-icon-levels.png" alt="Levels Icon" class="feature-icon">
-                    <h3>Challenging Levels</h3>
-                    <p>Progress through multiple waves and increasing difficulty.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="placeholder-icon-powerups.png" alt="Powerups Icon" class="feature-icon">
-                    <h3>Strategic Power-Ups</h3>
-                    <p>Collect upgrades to enhance your firepower and defenses.</p>
-                </div>
-            </div>
-        </section>
+    <section id="downloads" class="section" data-aos="zoom-in">
+      <h2>Download the Game</h2>
+      <p>Click below to download the APK file for Android:</p>
+      <a href="StrikeGame.apk" class="download-btn">Download APK</a>
+    </section>
 
-        <section id="media" class="content-section">
-            <h2>Media Showcase</h2>
-            <div class="media-gallery">
-                <img src="placeholder-screenshot1.jpg" alt="Strike Gameplay Screenshot 1">
-                <img src="placeholder-screenshot2.jpg" alt="Strike Gameplay Screenshot 2">
-                <img src="placeholder-screenshot3.jpg" alt="Strike Gameplay Screenshot 3">
-            </div>
-            <div class="video-container">
-                <h3>Watch the Trailer!</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
+    <section id="help" class="section" data-aos="fade-right">
+      <h2>Help</h2>
+      <p>If the game doesn't install, make sure to allow unknown sources in your phone settings. Contact support@pixelstrike.games for help.</p>
+    </section>
 
-        <section id="download-section" class="content-section alt-bg">
-            <h2>Download Strike</h2>
-            <p>Ready to join the fight? Download Strike for your platform below!</p>
-            <div class="download-options">
-                <div class="download-option">
-                    <h3>Windows</h3>
-                    <p>Version: 1.0 | Size: XX MB</p>
-                    <a href="YOUR_GAME_DOWNLOAD_LINK_WINDOWS.zip" class="cta-button download-button">Download for Windows</a>
-                </div>
-                </div>
-            <p class="requirements">System Requirements: Windows 7+, 2GB RAM, 100MB Disk Space (Example)</p>
-        </section>
+    <section id="about" class="section" data-aos="fade-left">
+      <h2>About</h2>
+      <p>Strike is an indie game developed by PixelStrike. Inspired by fast-paced turret shooters, the game brings excitement to your fingertips. Follow us for updates!</p>
+    </section>
+  </div>
 
-        <section id="developer" class="content-section">
-            <h2>About the Developer</h2>
-            <p>Hi, I'm [Your Name/Studio Name], the creator of Strike! I'm passionate about [Your Passion - e.g., retro arcade games, action-packed experiences]. Thanks for checking out my game!</p>
-            <div class="social-links">
-                <a href="#">Twitter</a> | <a href="#">itch.io Page</a>
-            </div>
-        </section>
-    </main>
+  <footer>
+    <p>&copy; 2025 PixelStrike. All rights reserved.</p>
+  </footer>
 
-    <footer>
-        <p>&copy; <span id="year"></span> [Your Name/Studio Name]. All rights reserved. Strike Game.</p>
-    </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
+
