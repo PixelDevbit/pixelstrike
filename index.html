@@ -3,147 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Strike - PixelStrike</title>
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <title>PixelStrike | Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #111;
-      color: #fff;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background: #0d1117; color: #c9d1d9; }
     header {
-      background-color: #222;
-      padding: 1rem;
-      text-align: center;
+      position: sticky; top: 0; z-index: 1000;
+      background: #161b22; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center;
+      border-bottom: 1px solid #30363d;
     }
-
-    header img {
-      height: 60px;
-      margin-bottom: 0.5rem;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background-color: #333;
-    }
-
+    header h1 { font-family: 'Orbitron', sans-serif; font-size: 1.5rem; color: #58a6ff; }
     nav a {
-      color: white;
-      padding: 1rem;
-      text-decoration: none;
-      text-align: center;
+      margin-left: 20px; color: #c9d1d9; text-decoration: none; font-weight: bold;
     }
-
-    nav a:hover {
-      background-color: #444;
-    }
-
-    .container {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .hero {
-      background: linear-gradient(to right, #222, #333);
-      padding: 4rem 2rem;
-      border-radius: 10px;
-      margin-bottom: 2rem;
-    }
-
+    nav a:hover { color: #58a6ff; }
     .section {
-      padding: 2rem;
-      margin: 2rem auto;
-      max-width: 900px;
+      padding: 60px 20px; max-width: 1000px; margin: auto;
     }
-
-    footer {
-      background-color: #222;
+    .hero {
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
     }
-
+    .hero img {
+      width: 150px; margin-bottom: 20px;
+    }
+    .hero h2 {
+      font-size: 2rem; color: #58a6ff;
+    }
+    .btn {
+      display: inline-block; margin-top: 20px; padding: 12px 25px; background: #238636;
+      color: white; border: none; border-radius: 5px; text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn:hover {
+      background: #2ea043; transform: scale(1.05);
+    }
+    .game-box {
+      background: #161b22; padding: 20px; border-radius: 10px; margin: 20px 0;
+      box-shadow: 0 0 20px #0d1117;
+    }
+    .game-box img { width: 100%; border-radius: 10px; }
+    footer {
+      text-align: center; padding: 20px; background: #0d1117; color: #8b949e; font-size: 0.9rem;
+    }
     @media (max-width: 768px) {
-      nav a {
-        flex: 1 1 100%;
-        padding: 1rem;
-      }
-
-      .hero {
-        padding: 2rem 1rem;
-      }
-    }
-
-    .download-btn {
-      background: #0f0;
-      color: #000;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      font-size: 1.2rem;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 1rem;
-    }
-
-    .download-btn:hover {
-      background: #0c0;
+      header { flex-direction: column; align-items: flex-start; }
+      nav a { margin: 10px 0 0 0; display: block; }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Strike Logo" />
-    <h1>Strike</h1>
-    <p>By PixelStrike</p>
+    <h1>PixelStrike</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#games">Games</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#contact">Help</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#downloads">Downloads</a>
-    <a href="#help">Help</a>
-    <a href="#about">About</a>
-  </nav>
+  <section class="section hero" id="home" data-aos="fade-up">
+    <img src="logo.png" alt="PixelStrike Logo" />
+    <h2>Welcome to PixelStrike</h2>
+    <p>Explore high-quality games made by indie devs with passion.</p>
+    <a class="btn" href="#games">See Games</a>
+  </section>
 
-  <div class="container">
-    <section id="home" class="hero" data-aos="fade-up">
-      <h2>Welcome to Strike!</h2>
-      <p>Defend your radar in this thrilling action shooter game.</p>
-    </section>
+  <section class="section" id="games" data-aos="fade-up">
+    <h2>Strike</h2>
+    <div class="game-box">
+      <p><strong>Strike</strong> is a turret-defense action game. Defend the radar, shoot jets, survive the night.</p>
+      <a class="btn" href="StrikeGame.apk" download>Download APK</a>
+    </div>
+  </section>
 
-    <section id="downloads" class="section" data-aos="zoom-in">
-      <h2>Download the Game</h2>
-      <p>Click below to download the APK file for Android:</p>
-      <a href="StrikeGame.apk" class="download-btn">Download APK</a>
-    </section>
+  <section class="section" id="screenshots" data-aos="fade-up">
+    <h2>Screenshots</h2>
+    <p>Screenshots coming soon...</p>
+    <!-- You can add images like: <img src="screenshot1.png"> -->
+  </section>
 
-    <section id="help" class="section" data-aos="fade-right">
-      <h2>Help</h2>
-      <p>If the game doesn't install, make sure to allow unknown sources in your phone settings. Contact support@pixelstrike.games for help.</p>
-    </section>
-
-    <section id="about" class="section" data-aos="fade-left">
-      <h2>About</h2>
-      <p>Strike is an indie game developed by PixelStrike. Inspired by fast-paced turret shooters, the game brings excitement to your fingertips. Follow us for updates!</p>
-    </section>
-  </div>
+  <section class="section" id="contact" data-aos="fade-up">
+    <h2>Help & Contact</h2>
+    <p>If you face any issues or want to contact the developer, reach out via email or follow PixelStrike on GitHub.</p>
+  </section>
 
   <footer>
-    <p>&copy; 2025 PixelStrike. All rights reserved.</p>
+    &copy; 2025 PixelStrike. All rights reserved.
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
 
