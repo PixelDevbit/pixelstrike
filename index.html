@@ -3,83 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Strike - A PixelStrike Game</title>
+  <title>Strike Game | PixelStrike</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #121212;
-      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    header {
       text-align: center;
     }
-    header {
-      background: #1f1f1f;
-      padding: 20px;
-    }
+
     h1 {
-      margin: 0;
-      font-size: 2.5em;
+      font-size: 3rem;
+      margin-bottom: 0.2em;
     }
+
     p {
-      color: #aaa;
+      font-size: 1.2rem;
+      color: #8b949e;
     }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
-    .game-media img, .game-media video {
-      width: 100%;
-      border: 4px solid #333;
-      border-radius: 8px;
-    }
-    .buttons {
-      margin-top: 20px;
-    }
-    .buttons a {
-      display: inline-block;
-      background: #28a745;
+
+    .btn-download {
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: #238636;
       color: white;
-      padding: 12px 24px;
-      margin: 10px;
-      border-radius: 5px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
       text-decoration: none;
-      transition: background 0.3s;
     }
-    .buttons a:hover {
-      background: #218838;
+
+    .btn-download:hover {
+      background-color: #2ea043;
+      transform: scale(1.05);
     }
+
     footer {
-      margin-top: 40px;
-      color: #666;
-      font-size: 0.9em;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #6e7681;
+    }
+
+    .logo {
+      margin-top: 20px;
+      width: 100px;
+      height: auto;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Strike</h1>
-    <p>Survive. Shoot. Dominate the skies.</p>
-    <p style="color:#777; font-size:0.9em;">A PixelStrike Production</p>
+    <img src="logo.png" alt="Strike Game Logo" class="logo"/>
+    <h1>Strike Game</h1>
+    <p>Defend your radar. Destroy enemy jets. Survive the night.</p>
+    <a href="StrikeGame.apk" class="btn-download" download>Download APK</a>
   </header>
 
-  <div class="container">
-    <div class="game-media">
-      <!-- Replace the src with your screenshot or trailer -->
-      <img src="your-screenshot.jpg" alt="Strike Game Screenshot">
-      <!-- Or use a video: -->
-      <!-- <video controls src="your-trailer.mp4"></video> -->
-    </div>
-
-    <div class="buttons">
-      <a href="StrikeGame.apk" download>Download APK</a>
-      <!-- Optional: add a trailer link -->
-      <!-- <a href="https://your-youtube-trailer" target="_blank">Watch Trailer</a> -->
-    </div>
-
-    <footer>
-      &copy; 2025 PixelStrike. All rights reserved.
-    </footer>
-  </div>
+  <footer>
+    Made with passion by PixelStrike
+  </footer>
 </body>
 </html>
