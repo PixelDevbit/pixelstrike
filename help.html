@@ -1,34 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PixelStrike - Help</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support - PixelStrike Games</title>
+    <meta name="description" content="Find help, FAQs, and support for games by PixelStrike, including 'Strike'.">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">PixelStrike</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="download.html">Download</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="help.html">Help</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section>
-      <h2>Help & FAQ</h2>
-      <p>Coming soon! This section will answer common questions and help you with installing and playing our games.</p>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 PixelStrike</p>
-  </footer>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">PixelStrike</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="help.html" class="active">Help</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title-section">
+            <div class="container">
+                <h1>Help & Support</h1>
+            </div>
+        </section>
+
+        <section id="faq" class="container content-section">
+            <h2>Frequently Asked Questions (FAQ) - Strike Demo</h2>
+
+            <div class="faq-item">
+                <h3>How do I control the truck/cannon in "Strike"?</h3>
+                <p>
+                    <strong>Keyboard:</strong>
+                    <ul>
+                        <li><strong>Move Truck:</strong> A/D keys or Left/Right Arrow keys.</li>
+                        <li><strong>Aim Cannon:</strong> Mouse movement.</li>
+                        <li><strong>Fire Cannon:</strong> Left Mouse Button.</li>
+                        <li><strong>Special Ability (if applicable):</strong> Spacebar or Right Mouse Button.</li>
+                    </ul>
+                    <em>(Please adjust these based on your actual game controls)</em>
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>The game isn't running smoothly. What can I do?</h3>
+                <p>
+                    Ensure your system meets the minimum requirements listed on the <a href="downloads.html#strike-demo">Downloads page</a>.
+                    Try closing other applications, updating your graphics drivers, or lowering in-game graphics settings (if available in the demo).
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Where can I report bugs or give feedback for the "Strike" demo?</h3>
+                <p>
+                    Your feedback is crucial! Please send bug reports and suggestions to:
+                    <a href="mailto:support@pixelstrike.dev">support@pixelstrike.dev</a> (or your preferred contact method).
+                    Please include as much detail as possible, such as what you were doing when the bug occurred and your system specifications.
+                </p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>When will the full version of "Strike" be released?</h3>
+                <p>
+                    The full version of "Strike" is currently under active development. Release dates will be announced here and on my social media channels (if any) as development progresses. Stay tuned for updates!
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="container content-section">
+            <h2>Contact PixelStrike</h2>
+            <p>For general inquiries, press, or other matters, you can reach out via email:</p>
+            <p><a href="mailto:contact@pixelstrike.dev" class="contact-email">contact@pixelstrike.dev</a></p>
+            <!-- Consider adding a contact form here later if you want, but email is simpler to start -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> PixelStrike Games. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
