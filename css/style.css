@@ -214,8 +214,8 @@ main {
     letter-spacing: 1px;
     transition: all 0.3s ease;
     border: none;
-    cursor: pointer; /* Ensure cursor indicates clickability */
-    text-align: center; /* For buttons with icons */
+    cursor: pointer;
+    text-align: center;
 }
 
 .cta-button {
@@ -287,8 +287,8 @@ main {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 .feature-item .feature-icon {
-    width: 80px; /* Adjust as needed */
-    height: 80px; /* Adjust as needed */
+    width: 80px;
+    height: 80px;
     margin: 0 auto 20px auto;
 }
 .feature-item h3 {
@@ -311,7 +311,7 @@ main {
     margin-bottom: 20px;
 }
 .game-cover {
-    width: 200px; /* Adjust as needed */
+    width: 200px;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
@@ -431,16 +431,38 @@ footer a:hover {
         position: absolute;
         top: var(--header-height);
         left: 0;
-        padding: 10px 0;
+        padding: 10px 0; /* Padding for the overall dropdown container */
         border-top: 1px solid var(--primary-color);
     }
     nav ul.active {
         display: flex;
     }
     nav ul li {
-        margin: 10px 20px;
+        margin: 0; /* Remove margin from li, padding will be on the 'a' tag */
         text-align: center;
+        width: 100%; /* Make li take full width */
     }
+    /* Styles for the links inside the mobile menu */
+    nav ul li a {
+        font-size: 1.2rem;  /* Larger font size for better tapability */
+        padding: 15px 20px; /* Generous padding for larger tap target */
+        display: block;     /* Make the link fill the width of its list item */
+        width: 100%;        /* Ensure 'a' tag also takes full width */
+        color: var(--text-color); /* Explicitly set color if needed */
+    }
+    /* Ensure active link styles are maintained or enhanced for mobile if desired */
+    nav ul li a.active {
+        color: var(--accent-color); /* Already defined globally, but good to be aware */
+        font-weight: 700;         /* Already defined globally */
+        /* You could add a background or other indicator for active mobile item if you wish */
+        /* background-color: rgba(255,255,255,0.1); */
+    }
+    nav ul li a:hover { /* Hover effect for mobile menu items */
+        background-color: rgba(255,255,255,0.05); /* Slight highlight on hover */
+        color: var(--accent-color); /* Optional: change color on hover */
+    }
+
+
     .menu-toggle {
         display: block;
     }
