@@ -1,34 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PixelStrike - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelStrike - Indie Game Development | Strike Demo</title>
+    <meta name="description" content="Official website for PixelStrike, indie game developer. Download the demo for 'Strike', a 2D shooter where you defend against enemy jets!">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">PixelStrike</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="download.html">Download</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="help.html">Help</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section>
-      <h2>Welcome to PixelStrike</h2>
-      <p>We are passionate indie game developers. Discover fun, action-packed games like Strike and many more coming soon!</p>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 PixelStrike</p>
-  </footer>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">PixelStrike</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>STRIKE</h1>
+                <p class="tagline">Defend Your Ground! Blast Enemy Jets in this Explosive 2D Shooter.</p>
+                <a href="downloads.html#strike-demo" class="cta-button">Download Demo Now!</a>
+            </div>
+        </section>
+
+        <section id="game-intro" class="container content-section">
+            <h2>Welcome to the Battlefield</h2>
+            <p>Get ready for intense action in <strong>Strike</strong>! Take command of a powerful cannon-mounted truck and obliterate waves of enemy jets. The demo version gives you a taste of the thrilling gameplay and explosive fun that awaits.</p>
+            <div class="media-gallery">
+                <!-- Replace with your actual gameplay images/gifs -->
+                <img src="images/strike-gameplay1.jpg" alt="Strike Gameplay Screenshot 1">
+                <img src="images/strike-gameplay2.jpg" alt="Strike Gameplay Screenshot 2">
+                <!-- You could also embed a YouTube video here -->
+            </div>
+        </section>
+
+        <section id="features" class="highlight-section">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <img src="images/truck-cannon.png" alt="Truck with Cannon Icon" class="feature-icon">
+                        <h3>Mighty Mobile Artillery</h3>
+                        <p>Control a heavily armed truck with a devastating cannon.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="images/jets-icon.png" alt="Enemy Jets Icon" class="feature-icon"> <!-- Create this icon -->
+                        <h3>Aerial Assault</h3>
+                        <p>Face relentless waves of diverse enemy jets, each with unique attack patterns.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="images/explosions-icon.png" alt="Explosions Icon" class="feature-icon"> <!-- Create this icon -->
+                        <h3>Explosive Action</h3>
+                        <p>Experience satisfying explosions and impactful combat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="developer-note" class="container content-section">
+            <h2>A Word from PixelStrike</h2>
+            <p>Hi, I'm PixelStrike, an indie game developer passionate about creating fun and engaging gaming experiences. "Strike" is my latest project, and I'm thrilled to share the demo with you. Your feedback is invaluable as I continue to develop and polish the full game. Stay tuned for more updates and future projects!</p>
+            <a href="about.html" class="secondary-button">Learn More About Me</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> PixelStrike Games. All rights reserved.</p>
+            <p>
+                <!-- Add social media links if you have them -->
+                <!-- <a href="#">Twitter</a> | <a href="#">Discord</a> -->
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
