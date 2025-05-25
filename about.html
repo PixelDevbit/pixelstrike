@@ -1,34 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PixelStrike - About</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About PixelStrike - Indie Game Developer</title>
+    <meta name="description" content="Learn more about PixelStrike, the indie game developer behind 'Strike' and other upcoming titles.">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">PixelStrike</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="download.html">Download</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="help.html">Help</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section>
-      <h2>About PixelStrike</h2>
-      <p>PixelStrike is an independent game development studio run by a passionate solo developer. Our goal is to create fun, challenging, and visually appealing games for everyone. Stay tuned for upcoming releases!</p>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 PixelStrike</p>
-  </footer>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">PixelStrike</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title-section">
+            <div class="container">
+                <h1>About PixelStrike</h1>
+            </div>
+        </section>
+
+        <section class="container content-section">
+            <div class="about-content">
+                <!-- Optional: Add a picture of yourself or your logo again -->
+                <!-- <img src="images/pixelstrike-avatar.jpg" alt="PixelStrike Avatar" class="about-avatar"> -->
+                
+                <h2>The Spark Behind the Pixels</h2>
+                <p>Hello! I'm the solo developer behind PixelStrike Games. My journey into game development started with a deep love for classic arcade shooters and a fascination with how simple pixels could create immersive worlds and thrilling experiences. What began as a hobby has grown into a passionate pursuit to craft unique and enjoyable games.</p>
+
+                <h3>My Mission</h3>
+                <p>At PixelStrike, the goal is to develop games that are:
+                    <ul>
+                        <li><strong>Fun & Engaging:</strong> Prioritizing core gameplay mechanics that keep you hooked.</li>
+                        <li><strong>Accessible:</strong> Easy to pick up and play, but with depth for those who seek it.</li>
+                        <li><strong>Crafted with Care:</strong> Paying attention to the details that make a game feel polished and memorable.</li>
+                    </ul>
+                </p>
+
+                <h3>The Story of "Strike"</h3>
+                <p>"Strike" was born from the idea of creating a modern take on the classic 2D side-scrolling shooter. I wanted to capture the intensity of fending off waves of enemies, combined with the satisfaction of wielding powerful, upgradeable weaponry. The vision is a game that's both challenging and immensely rewarding, where every successful defense feels like a hard-won victory. The truck-and-cannon concept felt like a unique twist, offering a grounded yet powerful player presence on the battlefield.</p>
+                
+                <h3>What's Next?</h3>
+                <p>While "Strike" is my current focus, I have a notebook full of ideas for future titles spanning various genres. The indie spirit of experimentation and creativity is what drives me. I'm excited to continue learning, growing, and sharing my creations with the gaming community.</p>
+                <p>Thank you for visiting and for your support!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> PixelStrike Games. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
