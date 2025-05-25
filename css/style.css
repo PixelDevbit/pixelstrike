@@ -290,9 +290,6 @@ main {
     width: 80px; /* Adjust as needed */
     height: 80px; /* Adjust as needed */
     margin: 0 auto 20px auto;
-    /* Style your icons here, or use <img> with actual icon files */
-    /* background-color: var(--accent-color);
-    border-radius: 50%; */
 }
 .feature-item h3 {
     color: var(--accent-color);
@@ -327,36 +324,34 @@ main {
     flex-wrap: wrap;
     gap: 15px;
 }
-.download-platform { /* General styling for all download platform buttons */
+.download-platform {
     min-width: 180px;
-    /* text-align will be handled by .cta-button if centered text is needed */
 }
 .small-text {
     font-size: 0.9em;
     opacity: 0.8;
 }
 
-/* --- Specific Download Button Styling (NEW) --- */
+/* --- Specific Download Button Styling --- */
 .download-icon {
-    width: 20px; /* Adjust size as needed */
-    height: 20px; /* Adjust size as needed */
+    width: 20px;
+    height: 20px;
     margin-right: 8px;
-    vertical-align: middle; /* Aligns icon nicely with text */
-    display: inline-block; /* Important for vertical-align to work well */
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .download-platform.android-download {
     background-color: var(--android-green);
-    color: #fff; /* Ensure text is readable on green background */
+    color: #fff;
 }
 .download-platform.android-download:hover {
     background-color: #8ab32c; /* Darker Android Green */
-    color: #fff; /* Keep text color consistent on hover */
+    color: #fff;
 }
 
-/* If you use the disabled Google Play button example */
 .cta-button.disabled,
-.download-platform.disabled { /* Ensure it applies to general and specific download buttons */
+.download-platform.disabled {
     background-color: #777;
     color: #ccc;
     cursor: not-allowed;
@@ -364,7 +359,7 @@ main {
 }
 .cta-button.disabled:hover,
 .download-platform.disabled:hover {
-    background-color: #777; /* Keep same color on hover */
+    background-color: #777;
     transform: none;
     box-shadow: none;
 }
@@ -381,7 +376,7 @@ main {
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 30px auto;
-    display: block; /* If you use it */
+    display: block;
     border: 3px solid var(--accent-color);
 }
 
@@ -477,11 +472,11 @@ footer a:hover {
     .logo { font-size: 1.5rem; }
 
     .download-platform {
-        width: 100%; /* Make download buttons full width on small screens */
-        margin-bottom: 10px; /* Add some space between stacked buttons */
+        width: 100%;
+        margin-bottom: 10px;
     }
     .download-buttons {
-        flex-direction: column; /* Stack download buttons */
+        flex-direction: column;
         align-items: center;
     }
 }
