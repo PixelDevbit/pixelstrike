@@ -1,29 +1,88 @@
-/* Add this to your css/style.css file */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads - PixelStrike Games | Strike for Android</title>
+    <meta name="description" content="Download the demo for 'Strike', an exciting 2D shooter for Android, by PixelStrike.">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- This line correctly links to your stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">PixelStrike</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="downloads.html" class="active">Downloads</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            </nav>
+        </div>
+    </header>
 
-.download-icon {
-    width: 20px; /* Adjust size as needed */
-    height: 20px; /* Adjust size as needed */
-    margin-right: 8px;
-    vertical-align: middle; /* Aligns icon nicely with text */
-}
+    <main>
+        <section class="page-title-section">
+            <div class="container">
+                <h1>Game Downloads</h1>
+            </div>
+        </section>
 
-.download-platform.android-download {
-    background-color: #A4C639; /* Android Green */
-    color: #fff;
-}
-.download-platform.android-download:hover {
-    background-color: #8ab32c; /* Darker Android Green */
-}
+        <section id="strike-demo" class="container content-section game-download-entry">
+            <h2>Strike - Android Demo Version</h2>
+            <div class="game-details">
+                <img src="images/strike-cover-android.jpg" alt="Strike Game Cover Art for Android" class="game-cover">
+                <div>
+                    <p>Take control of a powerful truck-mounted cannon and defend your territory from relentless enemy jets! The "Strike" demo offers a thrilling slice of 2D shooter action, now available for your Android device.</p>
+                    <p><strong>Current Version:</strong> v0.1.0 (Android Demo)</p>
+                    <p><strong>Release Date:</strong> [Enter Demo Release Date]</p>
+                    <p><strong>File Type:</strong> APK (Android Package)</p>
+                </div>
+            </div>
 
-/* If you use the disabled Google Play button example */
-.cta-button.disabled {
-    background-color: #777;
-    color: #ccc;
-    cursor: not-allowed;
-    opacity: 0.7;
-}
-.cta-button.disabled:hover {
-    background-color: #777;
-    transform: none;
-    box-shadow: none;
-}
+            <h3>Download Link:</h3>
+            <div class="download-buttons">
+                <a href="#" class="cta-button download-platform android-download">
+                    <img src="images/android-icon.png" alt="Android icon" class="download-icon">
+                    Download for Android (.apk)
+                </a>
+                <!--
+                If you plan to release on Google Play Store later, you can have a placeholder:
+                <a href="#" class="cta-button download-platform disabled">
+                    Coming Soon to Google Play
+                </a>
+                -->
+            </div>
+            <p class="small-text">
+                <em><strong>Important:</strong> To install this APK, you may need to enable "Install from Unknown Sources" in your Android device's security settings. This is standard for installing apps outside the Google Play Store.</em>
+            </p>
+
+            <h3>System Requirements (Android):</h3>
+            <ul>
+                <li><strong>Operating System:</strong> Android 5.0 (Lollipop) or higher</li>
+                <li><strong>Processor:</strong> 1.2 GHz Quad-core or equivalent</li>
+                <li><strong>RAM:</strong> 1 GB RAM (2 GB recommended for smoother gameplay)</li>
+                <li><strong>Storage:</strong> 100 MB available space</li>
+                <li><strong>Screen Resolution:</strong> HD (720p) recommended, supports various resolutions.</li>
+                <li><strong>Permissions:</strong> [List any specific permissions your game needs, e.g., Storage (if saving data externally)]</li>
+            </ul>
+            <p class="small-text"><em>Note: These are estimated requirements. Please test on various Android devices and update.</em></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> PixelStrike Games. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
