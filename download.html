@@ -1,84 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downloads - PixelStrike Games</title>
-    <meta name="description" content="Download the demo for 'Strike' and other games by PixelStrike.">
-    <link rel="icon" href="images/favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <a href="index.html" class="logo">PixelStrike</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="downloads.html" class="active">Downloads</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="help.html">Help</a></li>
-                </ul>
-                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-            </nav>
-        </div>
-    </header>
+/* Add this to your css/style.css file */
 
-    <main>
-        <section class="page-title-section">
-            <div class="container">
-                <h1>Game Downloads</h1>
-            </div>
-        </section>
+.download-icon {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    margin-right: 8px;
+    vertical-align: middle; /* Aligns icon nicely with text */
+}
 
-        <section id="strike-demo" class="container content-section game-download-entry">
-            <h2>Strike - Demo Version</h2>
-            <div class="game-details">
-                <img src="images/strike-cover.jpg" alt="Strike Game Cover Art" class="game-cover"> <!-- Create a cover art image -->
-                <div>
-                    <p>Take control of a powerful truck-mounted cannon and defend your territory from relentless enemy jets! The "Strike" demo offers a thrilling slice of 2D shooter action.</p>
-                    <p><strong>Current Version:</strong> v0.1.0 (Demo)</p>
-                    <p><strong>Release Date:</strong> [Enter Demo Release Date]</p>
-                </div>
-            </div>
+.download-platform.android-download {
+    background-color: #A4C639; /* Android Green */
+    color: #fff;
+}
+.download-platform.android-download:hover {
+    background-color: #8ab32c; /* Darker Android Green */
+}
 
-            <h3>Download Links:</h3>
-            <div class="download-buttons">
-                <!-- Replace # with actual download links when ready -->
-                <a href="#" class="cta-button download-platform">Windows (zip)</a>
-                <a href="#" class="cta-button download-platform">macOS (dmg)</a>
-                <a href="#" class="cta-button download-platform">Linux (tar.gz)</a>
-            </div>
-
-            <h3>System Requirements:</h3>
-            <ul>
-                <li><strong>OS:</strong> Windows 7+, macOS 10.12+, Ubuntu 18.04+ (or similar Linux)</li>
-                <li><strong>Processor:</strong> Dual Core 2.0 GHz</li>
-                <li><strong>Memory:</strong> 2 GB RAM</li>
-                <li><strong>Graphics:</strong> DirectX 9 compatible GPU / Metal / OpenGL 3.2+</li>
-                <li><strong>Storage:</strong> 200 MB available space</li>
-            </ul>
-            <p class="small-text"><em>Note: These are estimated requirements. Please test and update.</em></p>
-        </section>
-
-        <!-- Placeholder for future games -->
-        <!--
-        <section id="other-game" class="container content-section game-download-entry">
-            <h2>Another Awesome Game - Coming Soon!</h2>
-            <p>Stay tuned for more exciting titles from PixelStrike!</p>
-        </section>
-        -->
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>© <span id="current-year"></span> PixelStrike Games. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
-</html>
+/* If you use the disabled Google Play button example */
+.cta-button.disabled {
+    background-color: #777;
+    color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.cta-button.disabled:hover {
+    background-color: #777;
+    transform: none;
+    box-shadow: none;
+}
