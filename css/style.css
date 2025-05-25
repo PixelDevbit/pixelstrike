@@ -10,6 +10,7 @@
     --font-body: 'Roboto', sans-serif;
     --container-width: 1100px;
     --header-height: 70px;
+    --android-green: #A4C639; /* Android Green */
 }
 
 * {
@@ -213,6 +214,8 @@ main {
     letter-spacing: 1px;
     transition: all 0.3s ease;
     border: none;
+    cursor: pointer; /* Ensure cursor indicates clickability */
+    text-align: center; /* For buttons with icons */
 }
 
 .cta-button {
@@ -324,14 +327,48 @@ main {
     flex-wrap: wrap;
     gap: 15px;
 }
-.download-platform {
+.download-platform { /* General styling for all download platform buttons */
     min-width: 180px;
-    text-align: center;
+    /* text-align will be handled by .cta-button if centered text is needed */
 }
 .small-text {
     font-size: 0.9em;
     opacity: 0.8;
 }
+
+/* --- Specific Download Button Styling (NEW) --- */
+.download-icon {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    margin-right: 8px;
+    vertical-align: middle; /* Aligns icon nicely with text */
+    display: inline-block; /* Important for vertical-align to work well */
+}
+
+.download-platform.android-download {
+    background-color: var(--android-green);
+    color: #fff; /* Ensure text is readable on green background */
+}
+.download-platform.android-download:hover {
+    background-color: #8ab32c; /* Darker Android Green */
+    color: #fff; /* Keep text color consistent on hover */
+}
+
+/* If you use the disabled Google Play button example */
+.cta-button.disabled,
+.download-platform.disabled { /* Ensure it applies to general and specific download buttons */
+    background-color: #777;
+    color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.cta-button.disabled:hover,
+.download-platform.disabled:hover {
+    background-color: #777; /* Keep same color on hover */
+    transform: none;
+    box-shadow: none;
+}
+
 
 /* --- About Page --- */
 .about-content {
@@ -438,4 +475,13 @@ footer a:hover {
     .hero-content .tagline { font-size: 1rem; }
     .cta-button, .secondary-button { padding: 10px 20px; font-size: 1rem; }
     .logo { font-size: 1.5rem; }
+
+    .download-platform {
+        width: 100%; /* Make download buttons full width on small screens */
+        margin-bottom: 10px; /* Add some space between stacked buttons */
+    }
+    .download-buttons {
+        flex-direction: column; /* Stack download buttons */
+        align-items: center;
+    }
 }
